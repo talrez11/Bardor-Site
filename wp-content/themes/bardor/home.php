@@ -18,6 +18,8 @@
 ?>
 
 <?php get_header(); ?>
+	<!-- Include Social widget -->
+	<?php include('includes/social.php'); ?>
 	<!-- Page image -->
 	<section class="gallery">
 		<?php if( have_rows('slider_images') ): ?>
