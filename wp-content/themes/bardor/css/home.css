@@ -137,6 +137,7 @@ ul#feature li.doors a:before {
 div.project {
 	padding: 3em calc((100% - 1200px)/ 2);
 	text-align: center;
+	position: relative;
 }
 
 ul#project {

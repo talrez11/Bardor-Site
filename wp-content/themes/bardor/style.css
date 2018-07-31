@@ -247,7 +247,7 @@ nav .menu-main-navigation-container ul li a {
 div.social {
 	position: fixed;
 	top: 200px;
-	left: 0px;
+	left: -150%;
 	padding: 0.5em;
 	z-index: 1000000;
 	background-image: url(/wp-content/themes/bardor/images/social_bg.png);
@@ -256,6 +256,11 @@ div.social {
 	background-size: 100% auto;
 	text-align: center;
 	color: rgb(255, 199, 52);
+	transition: all 0.5s;
+}
+
+div.social.show {
+	left: 0%;
 }
 
 div.social:after {

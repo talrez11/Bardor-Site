@@ -1,4 +1,8 @@
 jQuery(window).ready(function() {
+	var socialTriggerPostion = jQuery('#gallery').position().top + 600;
+	var socialWidget = jQuery('div.social');
+	console.log(socialTriggerPostion, socialWidget);
+
 	jQuery('.gallery').bxSlider({
 		mode: 'fade',
 		speed: 1000,
@@ -21,5 +25,16 @@ jQuery(window).ready(function() {
 		arrows: false,
 		mobileFirst: true,
 		rtl: true
+	});
+
+	// Event for showing social widget on HP
+	jQuery(window).on('scroll', function(event) {
+		var scroll = jQuery(this).scrollTop();
+		console.log(scroll);
+		if(scroll > socialTriggerPostion) {
+			socialWidget.addClass('show');
+		} else {
+			socialWidget.removeClass('show');
+		}
 	});
 });

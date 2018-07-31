@@ -19,9 +19,9 @@
 
 <?php get_header(); ?>
 	<!-- Include Social widget -->
-	<?php include('includes/social.php'); ?>
+	<?php include_once('includes/social.php'); ?>
 	<!-- Page image -->
-	<section class="gallery">
+	<section id="gallery" class="gallery">
 		<?php if( have_rows('slider_images') ): ?>
 			<?php while( have_rows('slider_images') ): the_row(); // vars
 				$image = get_sub_field('image');
