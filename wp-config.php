@@ -34,6 +34,9 @@ define('DB_HOST', 'localhost');
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');
 
+// Solution for FTP on local enviourment
+define('FS_METHOD', 'direct');
+
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
