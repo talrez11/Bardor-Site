@@ -4,6 +4,7 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
+	color: rgb(42, 45, 44);
 }
 
 header {
@@ -90,11 +91,55 @@ nav .menu-main-navigation-container ul li a {
 }
 
 /*Home page main slider*/
+section.gallery {
+	position: relative;
+}
+
+.bx-controls-direction {
+	position: absolute;
+	top: 60%;
+	left: 0;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 100%;
+}
+
+.bx-prev {
+	position: absolute;
+	left: 1em;
+	color: transparent;
+	width: 2em;
+	height: 2em;
+	background-color: rgb(255, 199, 52);
+	background-image: url(/wp-content/themes/bardor/images/Asset7.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50% auto;
+	border-radius: 50%;
+	padding: 1.5em;
+}
+
+.bx-next {
+	position: absolute;
+	right: 1em;
+	color: transparent;
+	width: 2em;
+	height: 2em;
+	background-color: rgb(255, 199, 52);
+	background-image: url(/wp-content/themes/bardor/images/Asset7.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50% auto;
+	border-radius: 50%;
+	padding: 1.5em;
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
 
 section div.slide {
 	display: block;
-	width: 100%;
-	height: 700px;
+	width: 1920px;
+	height: 663px;
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: cover;
@@ -172,6 +217,74 @@ ul#feature li.doors a:before {
 	background-image: url(/wp-content/themes/bardor/images/Asset6.svg);
 }
 
+div.project {
+	padding: 3em calc((100% - 1200px)/ 2);
+	text-align: center;
+}
+
+ul#project {
+	display: block;
+}
+
+ul#project li {
+	display: inline-block;
+	vertical-align: top;
+	width: 367px;
+	height: 202px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+	margin: 0em 1em;
+	position: relative;
+}
+
+ul#project li.private {
+	background-image: url(/wp-content/themes/bardor/images/3.jpg);
+}
+
+ul#project li.business {
+	background-image: url(/wp-content/themes/bardor/images/2.jpg);
+}
+
+ul#project li.industry {
+	background-image: url(/wp-content/themes/bardor/images/1.jpg);
+}
+
+ul#project li a {
+	text-decoration: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 0.7em;
+	background: rgba(0, 0, 0, 0.75);
+	color: rgb(255, 199, 52);
+	font-weight: 700;
+	font-size: 1.4rem;
+	transition: all 0.3s;
+}
+
+ul#project li a:after {
+	content: "";
+	position: absolute;
+	top: 1.5em;
+	left: 0;
+	width: 1.5em;
+	height: 1.5em;
+	background-color: rgb(255, 199, 52);
+	background-image: url(/wp-content/themes/bardor/images/Asset7.svg);
+	background-repeat: no-repeat;
+	background-position: 12px center;
+	background-size: 45% auto;
+	border-radius: 50%;
+	padding: 1.1em;
+}
+
+ul#project li a:hover {
+	background-color: black;
+}
+
 section.content {
 	padding: 3em calc((100% - 1100px)/ 2);
 }
@@ -192,6 +305,7 @@ section.logos h2 {
 
 ul.slides {
 	margin-bottom: 2em;
+	padding: 2em 0em;
 }
 
 ul.slides li.slide {
@@ -206,4 +320,56 @@ ul.slides li.slide img {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	padding: 2em;
+}
+
+/*Footer Section*/
+
+footer {
+	display: block;
+	padding: 1em;
+	text-align: center;
+	background-image: url(/wp-content/themes/bardor/images/footer-bg.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 100% auto;
+/*	background-color: rgb(255, 199, 52);*/
+}
+
+footer a.logo {
+	display: inline-block;
+	width: 300px;
+}
+
+footer a.logo img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+footer ul {
+	display: block;
+	list-style-type: square;
+}
+
+footer ul li {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0em 0.5em;
+	font-size: 1.5rem;
+	position: relative;
+}
+
+footer ul li:after {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: black;
+}
+
+footer ul li a {
+	text-decoration: none;
+	color: rgb(42, 45, 44);
 }

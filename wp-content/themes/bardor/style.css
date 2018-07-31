@@ -83,6 +83,7 @@ body {
 	background: white;
 	font-size: 100%;
 	font-family: 'Open Sans', sans-serif;
+	direction: rtl;
 }
 
 article,
@@ -152,4 +153,8 @@ a:active {
 
 a img {
 	border: 0;
+}
+
+p {
+	margin: 0.5em 0em;
 }

@@ -6,9 +6,22 @@
  *
  */
 ?>
-
 	</div><!-- .site-content -->
 	<footer>
+		<a class="logo" href="<?php bloginfo('home'); ?>">
+			<img src="<?php echo get_stylesheet_directory_uri().'/images/logo.png'; ?>" alt="<?php bloginfo('name'); ?>"/>
+		</a>
+		<ul>
+			<li>
+				הסחלב 18 צורן ת.ד 986 מיקוד 42823
+			</li>
+			<li>
+				<a href="tel:0544439076">טלפון:0544439076 </a>
+			</li>
+			<li>
+				<a href="mailto:bardor@orange.net.co.il">דוא"ל:bardor@orange.net.co.il</a>
+			</li>
+		</ul>
 	</footer><!-- .site-footer -->
 </div><!-- .site -->
 
