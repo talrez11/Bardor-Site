@@ -6,9 +6,9 @@ jQuery(window).ready(function() {
 	jQuery('.gallery').bxSlider({
 		mode: 'fade',
 		speed: 1000,
-		pause: 8000,
+		pause: 5000,
 		pager: false,
-		controls: true,
+		controls: false,
 		auto: true,
 		touchEnabled: true,
 		swipeThreshold: 50,

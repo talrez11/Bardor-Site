@@ -35,12 +35,4 @@
 					)
 				);
 			?>
-			<!-- Main Navigation -->
-			<?php
-				wp_nav_menu( array(
-					'theme_location' => 'Main Navigation',
-					'item_spacing' => 'discard'
-					)
-				);
-			?>
 		</nav>

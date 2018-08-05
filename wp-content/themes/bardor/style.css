@@ -168,7 +168,7 @@ header {
 header a.logo {
 	display: inline-block;
 	vertical-align: middle;
-	width: 450px;
+	width: 478px;
 }
 
 header a.logo img {
@@ -185,7 +185,7 @@ header a.phone {
 	transform: translateY(-50%);
 	text-decoration: none;
 	color: black;
-	font-size: 2.8rem;
+	font-size: 2.5rem;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -195,7 +195,8 @@ nav {
 }
 
 nav .menu-main-menu-container {
-	padding: 1.5em calc((100% - 1200px)/ 2);
+	padding: 0em calc((100% - 1200px)/ 2);
+	background-color: rgb(47, 48, 47);
 }
 
 nav .menu-main-menu-container ul li {
@@ -205,18 +206,23 @@ nav .menu-main-menu-container ul li {
 	width: 20%;
 }
 
+nav .menu-main-menu-container ul li:first-of-type a {
+	border-right: 1px solid white;
+}
+
 nav .menu-main-menu-container ul li a {
 	display: block;
 	padding: 0.2rem 0.5em;
 	text-decoration: none;
-	color: black;
+	color: white;
 	font-size: 1.5rem;
-	border-left: 1px solid black;
+	border-left: 1px solid white;
 	font-family: 'Open Sans', sans-serif;
 }
 
 nav .menu-main-menu-container ul li.current-menu-item a {
 	font-weight: 700;
+	color: rgb(255, 199, 52);
 }
 
 /*main navigation*/
