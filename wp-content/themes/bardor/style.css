@@ -161,7 +161,7 @@ p {
 
 header {
 	display: block;
-	padding: 2em calc((100% - 1200px)/ 2);
+	padding: 1em calc((100% - 1200px)/ 2);
 	position: relative;
 }
 
