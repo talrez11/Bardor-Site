@@ -55,7 +55,6 @@ section.gallery {
 
 section div.slide {
 	display: block;
-	margin-top: 1em;
 	width: 1920px;
 	height: calc(100vw * (500 / 1920));
 	background-repeat: no-repeat;
