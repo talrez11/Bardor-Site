@@ -25,8 +25,14 @@
 		<?php if( have_rows('slider_images') ): ?>
 			<?php while( have_rows('slider_images') ): the_row(); // vars
 				$image = get_sub_field('image');
+				$description = get_sub_field('description');
+				$class = get_sub_field('description_position');
 			?>
-				<div class="slide" style="background-image: url('<?php echo $image; ?>');"></div>
+				<div class="slide" style="background-image: url('<?php echo $image; ?>');">
+					<div class="<?php echo $class.' info' ?>">
+						<p><?php echo $description; ?></p>
+					</div>
+				</div>
 			<?php endwhile; ?>
 		<?php endif; ?>
 	</section>

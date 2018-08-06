@@ -57,11 +57,73 @@ section div.slide {
 	display: block;
 	margin-top: 1em;
 	width: 1920px;
-	height: 500px;
+	height: calc(100vw * (500 / 1920));
 	background-repeat: no-repeat;
 	background-position: center top;
-	background-size: cover;
+	background-size: 100% auto;
 	overflow: hidden;
+	position: relative;
+}
+
+section div.slide div.info {
+	z-index: 100;
+	position: absolute;
+	width: 500px;
+	text-align: center;
+	padding: 3em 2em;
+	box-sizing: border-box;
+	background-color: rgba(0, 0, 0, 0.5);
+	border: 5px solid rgb(255, 199, 52);
+}
+
+section div.slide div.info.right {
+	top: 50px;
+	right: calc(50% - 600px);
+}
+
+section div.slide div.info.left {
+	top: 50px;
+	right: auto;
+	left: calc(50% - 600px);
+}
+
+section div.slide div.info.center {
+	top: auto;
+	bottom: 50px;
+	right: auto;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+section div.slide div.info:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	right: -1em;
+	background-color: black;
+	background-image: url(/wp-content/themes/bardor/images/arrow_yellow.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 70% auto;
+	width: 3em;
+	height: 3em;
+	z-index: 100000;
+}
+
+section div.slide div.info.left:before {
+	right: auto;
+	left: -1em;
+	-webkit-transform: translateY(-50%) rotate(-180deg);
+	transform: translateY(-50%) rotate(-180deg);
+}
+
+section div.slide div.info p {
+	font-size: 1.8rem;
+	color: white;
+	font-weight: 700;
 }
 
 /*Home page features*/
