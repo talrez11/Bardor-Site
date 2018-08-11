@@ -4,13 +4,14 @@
 	*/
 	function inner_page_scripts() {
 		wp_enqueue_style('inner-page', get_stylesheet_directory_uri().'/css/inner.css', array(), true);
-		wp_enqueue_script('script', get_stylesheet_directory_uri().'/js/script.js', array('jquery'), true);
+		wp_enqueue_script('inner-script', get_stylesheet_directory_uri().'/js/inner-script.js', array('jquery'), true);
 	}
 	add_action( 'wp_enqueue_scripts', 'inner_page_scripts' );
 ?>
 
 <?php get_header(); ?>
-
+	<!-- Include Social widget -->
+	<?php include_once('includes/social.php'); ?>
 	<section class="top">
 		<?php
 			if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.

@@ -1,5 +1,5 @@
 jQuery(window).ready(function() {
-	var socialTriggerPostion = jQuery('#gallery').position().top + 600;
+	var socialTriggerPostion = jQuery('#gallery').position().top + 300;
 	var socialWidget = jQuery('div.social');
 	console.log(socialTriggerPostion, socialWidget);
 
