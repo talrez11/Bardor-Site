@@ -1,0 +1,45 @@
+/*Inner Pages Style*/
+
+section.top .attachment-full.size-full.wp-post-image {
+	width: 100%;
+	height: auto;
+}
+
+section.content {
+	padding: 3em calc((100% - 1200px)/ 2);
+	color: rgb(42, 45, 44);
+}
+
+section.content h2 {
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+
+section.content h3 {
+	font-size: 1.5rem;
+	position: relative;
+	margin-top: 2em;
+}
+
+section.content h3:before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	background-image: url(/wp-content/themes/bardor/images/arrow_yellow.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+	width: 0.8em;
+	height: 0.8em;
+	z-index: 100000;
+	margin-left: 0.4em;
+}
+
+section.content p {
+	margin: 0.2em 0em;
+	font-size: 1.5rem;
+}
+
+section.content strong {
+	font-weight: 700;
+}
