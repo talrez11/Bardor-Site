@@ -12,12 +12,21 @@
 <?php get_header(); ?>
 	<!-- Include Social widget -->
 	<?php include_once('includes/social.php'); ?>
-	<section class="top">
-		<?php
-			if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-				the_post_thumbnail( 'full' );
-		}
-		?>
+
+	<section id="gallery" class="gallery">
+		<?php if( have_rows('slider_images') ): ?>
+			<?php while( have_rows('slider_images') ): the_row(); // vars
+				$image = get_sub_field('image');
+				$description = get_sub_field('description');
+				$class = get_sub_field('description_position');
+			?>
+				<div class="slide" style="background-image: url('<?php echo $image; ?>');">
+					<div class="<?php echo $class.' info' ?>">
+						<p><?php echo $description; ?></p>
+					</div>
+				</div>
+			<?php endwhile; ?>
+		<?php endif; ?>
 	</section>
 
 	<section class="content">
