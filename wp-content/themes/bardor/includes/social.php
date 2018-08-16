@@ -2,6 +2,17 @@
 	<h3>צור קשר</h3>
 	<a href="tel:0544439076">
 		<span>0544439076</span>
-		<img src="<?php echo get_stylesheet_directory_uri().'/images/phone.png'; ?>" alt="phone"/>
 	</a>
+	<ul>
+		<li>
+			<a href="mailto:talreznic11@gmail.com">
+				<img src="<?php echo get_stylesheet_directory_uri().'/images/facebook.png'; ?>" alt="facebook"/>
+			</a>
+		</li>
+		<li>
+			<a href="http://www.walla.co.il" target="_blank">
+				<img src="<?php echo get_stylesheet_directory_uri().'/images/mail.png'; ?>" alt="mail"/>
+			</a>
+		</li>
+	</ul>
 </div>

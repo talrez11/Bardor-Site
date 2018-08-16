@@ -164,47 +164,6 @@ section.gallery {
 	position: relative;
 }
 
-.bx-controls-direction {
-	position: absolute;
-	top: 60%;
-	left: 0;
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
-	width: 100%;
-}
-
-.bx-prev {
-	position: absolute;
-	left: 1em;
-	color: transparent;
-	width: 2em;
-	height: 2em;
-	background-color: rgb(255, 199, 52);
-	background-image: url(/wp-content/themes/bardor/images/Asset7.svg);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 50% auto;
-	border-radius: 50%;
-	padding: 1.5em;
-}
-
-.bx-next {
-	position: absolute;
-	right: 1em;
-	color: transparent;
-	width: 2em;
-	height: 2em;
-	background-color: rgb(255, 199, 52);
-	background-image: url(/wp-content/themes/bardor/images/Asset7.svg);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 50% auto;
-	border-radius: 50%;
-	padding: 1.5em;
-	-webkit-transform: rotate(180deg);
-	transform: rotate(180deg);
-}
-
 section div.slide {
 	display: block;
 	width: 1920px;
@@ -499,7 +458,7 @@ div.social {
 	position: fixed;
 	top: 200px;
 	left: -150%;
-	padding: 0.5em;
+	padding: 1em 1.5em;
 	z-index: 1000000;
 	background-image: url(/wp-content/themes/bardor/images/social_bg.png);
 	background-repeat: no-repeat;
@@ -527,28 +486,43 @@ div.social:after {
 }
 
 div.social h3 {
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 	border-bottom: 1.5px dotted rgb(255, 199, 52);
 	padding-bottom: 0.2em;
 }
 
-div.social a {
+div.social > a {
 	text-decoration: none;
 	color: rgb(255, 199, 52);
 }
 
-div.social a span {
+div.social > a span {
 	display: block;
 	padding: 0.5em 0em;
 	font-weight: 700;
 }
 
-div.social a img {
+div.social ul {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 65%;
 }
+
+div.social ul li {
+	display: inline-block;
+	vertical-align: top;
+}
+
+div.social ul li a {
+	display: block;
+	border-radius: 50%;
+	width: 1.5em;
+	height: 1.5em;
+}
+
+div.social ul li a img {
+	display: block;
+	height: auto;
+}
+
 
 /*Footer Section*/
 footer {
