@@ -3,6 +3,8 @@
 		Template Name: Inner Page
 	*/
 	function inner_page_scripts() {
+		wp_enqueue_script('slider', get_stylesheet_directory_uri().'/js/jquery.bxslider.js', array('jquery'), true);
+		wp_enqueue_style('slider-style', get_stylesheet_directory_uri().'/css/jquery.bxslider.css', array(), true);
 		wp_enqueue_style('inner-page', get_stylesheet_directory_uri().'/css/inner.css', array(), true);
 		wp_enqueue_script('inner-script', get_stylesheet_directory_uri().'/js/inner-script.js', array('jquery'), true);
 	}
@@ -30,7 +32,29 @@
 	</section>
 
 	<section class="content">
-		<?php the_content(); ?>
+		<h2><?php echo the_title(); ?></h2>
+		<?php echo the_content(); ?>
+		<?php if( have_rows('page_content') ): ?>
+			<?php while( have_rows('page_content') ): the_row(); // vars
+				$title = get_sub_field('title');
+				$description = get_sub_field('description');
+			?>
+			<article>
+				<h3><?php echo trim($title); ?></h3>
+				<?php echo $description; ?>
+				<div class="image">
+					<?php if( have_rows('content_image') ): ?>
+						<?php while( have_rows('content_image') ): the_row();?>
+							<span>
+								<img src="<?php echo get_sub_field('image'); ?>" alt="<?php echo get_sub_field('name'); ?>">
+								<?php echo get_sub_field('name'); ?>
+							</span>
+						<?php endwhile; ?>
+					<?php endif; ?>
+				</div>
+			</article>
+			<?php endwhile; ?>
+		<?php endif; ?>
 	</section>
 
 <?php get_footer(); ?>
