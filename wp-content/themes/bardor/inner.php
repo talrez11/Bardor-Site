@@ -57,4 +57,18 @@
 		<?php endif; ?>
 	</section>
 
+	<?php if( have_rows('page_gallery') ): ?>
+		<section class="product_images">
+				<?php while( have_rows('page_gallery') ): the_row(); // vars
+					$image = get_sub_field('image');
+					$title = get_sub_field('title');
+				?>
+					<div>
+						<img src="<?php echo $image; ?>" alt="<?php echo $title ?>">
+						<span><?php echo $title; ?></span>
+					</div>
+				<?php endwhile; ?>
+		</section>
+	<?php endif; ?>
+
 <?php get_footer(); ?>
