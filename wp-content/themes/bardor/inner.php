@@ -40,15 +40,17 @@
 				$description = get_sub_field('description');
 			?>
 			<article>
-				<h3><?php echo trim($title); ?></h3>
-				<?php echo $description; ?>
+				<div class="content">
+					<h3><?php echo trim($title); ?></h3>
+					<?php echo $description; ?>
+				</div>
 				<div class="image">
 					<?php if( have_rows('content_image') ): ?>
 						<?php while( have_rows('content_image') ): the_row();?>
-							<span>
+							<div class="wrapper">
 								<img src="<?php echo get_sub_field('image'); ?>" alt="<?php echo get_sub_field('name'); ?>">
-								<?php echo get_sub_field('name'); ?>
-							</span>
+								<span><?php echo get_sub_field('name'); ?></spa<?php echo get_sub_field('name'); ?>n>
+							</div>
 						<?php endwhile; ?>
 					<?php endif; ?>
 				</div>

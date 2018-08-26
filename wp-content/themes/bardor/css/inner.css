@@ -10,15 +10,33 @@ section.content {
 	color: rgb(42, 45, 44);
 }
 
+section.content article {
+	display: block;
+	position: relative;
+	padding: 3em 0em;
+	border-bottom: 1px solid rgba(204, 202, 202, 0.5);
+}
+
+section.content article:last-of-type {
+	border-bottom: none;
+}
+
 section.content h2 {
 	font-size: 2.5rem;
 	font-weight: 700;
 }
 
+section.content article div.content {
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	width: calc(100% - 350px);
+	padding-left: 5em;
+}
+
 section.content h3 {
 	font-size: 1.5rem;
 	position: relative;
-	margin-top: 2em;
 	font-weight: 700;
 }
 
@@ -43,4 +61,35 @@ section.content p {
 
 section.content strong {
 	font-weight: 700;
+}
+
+section.content article div.image {
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	width: 300px;
+}
+
+section.content article div.image div.wrapper {
+	display: block;
+	position: relative;
+}
+
+section.content article div.image div.wrapper img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+section.content article div.image div.wrapper span {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 0.5em;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	font-weight: 600;
+	font-size: 1.2rem;
 }
