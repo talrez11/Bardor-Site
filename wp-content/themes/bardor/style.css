@@ -191,7 +191,7 @@ section div.slide div.info.center,
 section div.slide div.info.left {
 	z-index: 100;
 	position: absolute;
-	width: 500px;
+	width: 540px;
 	text-align: center;
 	padding: 0em;
 	box-sizing: border-box;
@@ -265,7 +265,8 @@ section div.slide div.info.center {
 }
 
 section div.slide div.info p {
-	font-size: 1.6rem;
+	padding: 0.5em;
+	font-size: 1.65rem;
 	color: white;
 	font-weight: 700;
 	position: relative;

@@ -26,6 +26,16 @@ section.content h2 {
 	font-weight: 700;
 }
 
+section.content ul {
+	padding-right: 20px;
+	list-style-type: disc;
+}
+
+section.content ul li {
+	margin: 0.2em 0em;
+	font-size: 1.5rem;
+}
+
 section.content article div.content {
 	display: inline-block;
 	vertical-align: top;
@@ -82,6 +92,41 @@ section.content article div.image div.wrapper img {
 }
 
 section.content article div.image div.wrapper span {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 0.5em;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	font-weight: 600;
+	font-size: 1.2rem;
+}
+
+section.product_images {
+	padding: 0em calc((100% - 1200px)/ 2);
+}
+
+section.product_images div {
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	width: 300px;
+	position: relative;
+	margin-left: 48px;
+	margin-right: 48px;
+	margin-bottom: 96px;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+section.product_images div img {
+	display: block;
+	width: 300px;
+	height: 300px;
+}
+
+section.product_images div span {
 	position: absolute;
 	bottom: 0;
 	left: 0;
