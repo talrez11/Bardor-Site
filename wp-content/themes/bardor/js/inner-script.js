@@ -15,6 +15,19 @@ jQuery(window).ready(function() {
 		preloadImages: 'visible'
 	});
 
+	if(jQuery('ul.slides')) {
+		jQuery('ul.slides').slick({
+			slidesToShow: 8,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 1000,
+			pauseOnHover: false,
+			arrows: false,
+			mobileFirst: true,
+			rtl: true
+		});
+	}
+
 	// Event for showing social widget on HP
 	jQuery(window).on('scroll', function(event) {
 		var scroll = jQuery(this).scrollTop();
