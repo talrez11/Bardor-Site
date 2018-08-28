@@ -361,6 +361,10 @@ nav .menu-main-menu-container ul li {
 	width: 20%;
 }
 
+nav .menu-main-menu-container ul li.current-menu-parent > a {
+	color: rgb(255, 199, 52)
+}
+
 nav .menu-main-menu-container ul li:first-of-type a {
 	border-right: 1px solid white;
 }
@@ -416,11 +420,12 @@ nav .menu-main-menu-container ul li:hover ul.sub-menu {
 nav .menu-main-menu-container ul li ul.sub-menu li {
 	display: block;
 	width: 100%;
+	text-align: right;
 }
 
 nav .menu-main-menu-container ul li ul.sub-menu li a {
 	display: block;
-	padding: 0.8em 0.5em;
+	padding: 0.8em 1em;
 	font-size: 1.1em;
 	transition: all 0.3s;
 	border: none;
