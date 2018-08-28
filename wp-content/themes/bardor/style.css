@@ -459,7 +459,7 @@ div.social {
 	position: fixed;
 	top: 200px;
 	left: -150%;
-	padding: 1em 1.5em;
+	padding: 1em;
 	z-index: 1000000;
 	background-image: url(/wp-content/themes/bardor/images/social_bg.png);
 	background-repeat: no-repeat;
@@ -468,6 +468,7 @@ div.social {
 	text-align: center;
 	color: rgb(255, 199, 52);
 	transition: all 0.5s;
+	border: 2px solid white;
 }
 
 div.social.show {
@@ -487,8 +488,8 @@ div.social:after {
 }
 
 div.social h3 {
-	font-size: 1.8rem;
-	border-bottom: 1.5px dotted rgb(255, 199, 52);
+	font-size: 2.7rem;
+	border-bottom: 3px dotted white;
 	padding-bottom: 0.2em;
 }
 
@@ -499,28 +500,31 @@ div.social > a {
 
 div.social > a span {
 	display: block;
-	padding: 0.5em 0em;
+	padding: 0.2em 0em;
 	font-weight: 700;
+	font-size: 1.5rem;
 }
 
 div.social ul {
 	display: block;
+	margin-top: 2em;
+	margin-bottom: 1em;
 }
 
 div.social ul li {
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
+	margin: 0em 0.6em;
 }
 
 div.social ul li a {
 	display: block;
 	border-radius: 50%;
-	width: 1.5em;
-	height: 1.5em;
 }
 
 div.social ul li a img {
 	display: block;
+	width: 100%;
 	height: auto;
 }
 
