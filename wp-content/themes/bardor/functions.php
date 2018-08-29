@@ -14,4 +14,36 @@
 		);
 	}
 	add_action( 'init', 'print_site_menues' );
+
+	// action for sending to mailchimp
+	add_action('wp_ajax_send_to_mailchimp', 'send_to_mailchimp');
+	add_action('wp_ajax_nopriv_send_to_mailchimp', 'send_to_mailchimp');
+
+	function send_to_mailchimp() {
+		// Put your MailChimp API and List ID hehe
+		$api_key = '3a0286df91b7249ccc40d809813c7d05-us12';
+		$list_id = 'f780ed0eff';
+
+		// Let's start by including the MailChimp API wrapper
+		include('includes/MailChimp.php');
+
+		$MailChimp = new MailChimp($api_key);
+		$memberId = $MailChimp->subscriberHash($_POST['email']);
+
+		// Submit subscriber data to MailChimp
+		// For parameters doc, refer to: http://developer.mailchimp.com/documentation/mailchimp/reference/lists/members/
+		// For wrapper's doc, visit: https://github.com/drewm/mailchimp-api
+		$result = $MailChimp->put("lists/$list_id/members/".$memberId, [
+			'email_address' => $_POST["email"],
+			'merge_fields'  => ['FNAME'=>$_POST["fname"], 'PHONE'=>$_POST["phone"]],
+			'status'        => 'subscribed'
+		]);
+
+		if ($MailChimp->success()) {
+			echo 1;
+		} else {
+			echo $MailChimp->getLastError();
+		}
+		die();
+	}
 ?>

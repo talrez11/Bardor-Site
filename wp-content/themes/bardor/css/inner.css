@@ -200,6 +200,27 @@ ul.slides li.slide img {
 
 /*Contact form*/
 
+section.content {
+	position: relative;
+}
+
+.lds-roller {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	background-color: black;
+	border-radius: 50%;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.lds-roller.show {
+	opacity: 1;
+	visibility: visible;
+}
+
 #signup {
 	display: block;
 	margin-left: auto;
@@ -225,6 +246,7 @@ ul.slides li.slide img {
 	width: 100%;
 	padding: 0.7em 0.5em;
 	border: 1px solid rgb(255, 199, 52);
+	font-size: 1.2rem;
 }
 
 #signup div input[type="submit"] {
@@ -232,12 +254,13 @@ ul.slides li.slide img {
 	margin-left: auto;
 	margin-right: auto;
 	width: 300px;
-	background-color: black;
+	background-color: rgb(255, 199, 52);
 	font-size: 1.5em;
-	color: white;
+	color: black;
 	font-weight: 700;
 	padding: 0.9em 0.5em;
 	cursor: pointer;
+	border: 2px solid black;
 }
 
 #signup label:before {
@@ -252,4 +275,11 @@ ul.slides li.slide img {
 	height: 0.8em;
 	z-index: 100000;
 	margin-left: 0.4em;
+}
+
+#response {
+	display: block;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 700;
 }

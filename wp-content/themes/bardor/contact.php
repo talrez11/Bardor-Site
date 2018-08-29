@@ -31,24 +31,25 @@
 	<section class="content">
 		<form id="signup" method="post">
 			<fieldset>
+				<input type="hidden" name="action" value="send_to_mailchimp"/>
 				<div>
 					<label for="fname">שם:</label> <input name="fname" id="fname" type="text"/>
 				</div>
 				<div>
-					<label for="lname">טלפון:</label> <input name="lname" id="lname" type="text"/>
+					<label for="lname">טלפון:</label> <input name="phone" id="phone" type="text"/>
 				</div>
 				<div>
-					<label for="email">דוא"ל אלקטרוני:</label> <input name="email" id="email" type="text"/>
+					<label for="email">דוא"ל אלקטרוני:</label> <input name="email" id="email" type="emailS"/>
 				</div>
 				<div>
 					<label for="textarea">הערות:</label> <textarea name="message" id="textarea" ></textarea>
 				</div>
+				<div id="response"></div>
 				<div>
 					<input type="submit" title="Send" value="שלח"/>
 				</div>
 			</fieldset>
 		</form>
-		<div id="response"></div>
 		<div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
 	</section>
 <?php get_footer(); ?>
