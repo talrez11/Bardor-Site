@@ -197,3 +197,59 @@ ul.slides li.slide img {
 	transform: translate(-50%, -50%);
 	padding: 2em;
 }
+
+/*Contact form*/
+
+#signup {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+#signup div {
+	display: block;
+	margin-bottom: 1em;
+}
+
+#signup div label {
+	display: block;
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-bottom: 0.3em;
+}
+
+#signup div textarea,
+#signup div input {
+	display: block;
+	width: 100%;
+	padding: 0.7em 0.5em;
+	border: 1px solid rgb(255, 199, 52);
+}
+
+#signup div input[type="submit"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	background-color: black;
+	font-size: 1.5em;
+	color: white;
+	font-weight: 700;
+	padding: 0.9em 0.5em;
+	cursor: pointer;
+}
+
+#signup label:before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	background-image: url(/wp-content/themes/bardor/images/arrow_yellow.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+	width: 0.8em;
+	height: 0.8em;
+	z-index: 100000;
+	margin-left: 0.4em;
+}
