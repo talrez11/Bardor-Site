@@ -21,7 +21,7 @@
 
 	function send_to_mailchimp() {
 		// Put your MailChimp API and List ID hehe
-		$api_key = '3a0286df91b7249ccc40d809813c7d05-us12';
+		$api_key = '1f6f150149f7679fff9e564c9d76aeb9-us12';
 		$list_id = 'f780ed0eff';
 
 		// Let's start by including the MailChimp API wrapper
