@@ -1,6 +1,6 @@
 /*Inner page mobile style*/
 div.my-class {
-	margin-top: 65px;
+	margin-top: 60px;
 }
 
 section.gallery {
@@ -186,4 +186,90 @@ section.product_images div span {
 	font-weight: 600;
 	font-size: 1.2rem;
 	transition: all 0.3s;
+}
+
+/*Contact form*/
+
+section.content {
+	position: relative;
+}
+
+.lds-roller {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	background-color: black;
+	border-radius: 50%;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.lds-roller.show {
+	opacity: 1;
+	visibility: visible;
+}
+
+#signup {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+#signup div {
+	display: block;
+	margin-bottom: 1em;
+}
+
+#signup div label {
+	display: block;
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-bottom: 0.3em;
+}
+
+#signup div textarea,
+#signup div input {
+	display: block;
+	width: 100%;
+	padding: 0.7em 0.5em;
+	border: 1px solid rgb(255, 199, 52);
+	font-size: 1.2rem;
+}
+
+#signup div input[type="submit"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	background-color: rgb(255, 199, 52);
+	font-size: 1.5em;
+	color: black;
+	font-weight: 700;
+	padding: 0.9em 0.5em;
+	cursor: pointer;
+	border: 2px solid black;
+}
+
+#signup label:before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	background-image: url(/wp-content/themes/bardor/images/arrow_yellow.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+	width: 0.8em;
+	height: 0.8em;
+	z-index: 100000;
+	margin-left: 0.4em;
+}
+
+#response {
+	display: block;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 700;
 }
