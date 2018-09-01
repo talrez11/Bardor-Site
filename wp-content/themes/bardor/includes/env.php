@@ -1,3 +1,0 @@
-<?php
-	define('MAILCHIMP_API', '464d9491978971999183b9199485c83f-us12');
-?>
