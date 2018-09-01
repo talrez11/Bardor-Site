@@ -381,7 +381,7 @@ footer {
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: 100% auto;
-/*	background-color: rgb(255, 199, 52);*/
+	background-color: rgb(255, 199, 52);
 }
 
 footer a.logo {
@@ -421,6 +421,20 @@ footer ul li:after {
 footer ul li a {
 	text-decoration: none;
 	color: rgb(42, 45, 44);
+}
+
+@media only screen and (max-width: 767px) {
+	footer {
+		background-color: rgb(255, 199, 52);
+	}
+
+	footer ul li {
+		display: block;
+		font-size: 1.1rem;
+		text-align: center;
+		margin-bottom: 0.5em;
+		margin-top: 0.5em;
+	}
 }
 
 /*Loader style*/

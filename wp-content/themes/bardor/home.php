@@ -5,11 +5,11 @@
 	function home_page_scripts() {
 		wp_enqueue_script('slider', get_stylesheet_directory_uri().'/js/jquery.bxslider.js', array('jquery'), true);
 		wp_enqueue_style('slider-style', get_stylesheet_directory_uri().'/css/jquery.bxslider.css', array(), true);
-		wp_enqueue_script('slick-script', get_stylesheet_directory_uri().'/js/slick.js', array('jquery'), true);
-		wp_enqueue_style('slick-theme-style', get_stylesheet_directory_uri().'/css/slick-theme.css', array(), true);
-		wp_enqueue_style('slick-style', get_stylesheet_directory_uri().'/css/slick.css', array(), true);
 		wp_enqueue_script('script', get_stylesheet_directory_uri().'/js/script.js', array('jquery'), true);
 		if(!is_mobile()) {
+			wp_enqueue_script('slick-script', get_stylesheet_directory_uri().'/js/slick.js', array('jquery'), true);
+			wp_enqueue_style('slick-theme-style', get_stylesheet_directory_uri().'/css/slick-theme.css', array(), true);
+			wp_enqueue_style('slick-style', get_stylesheet_directory_uri().'/css/slick.css', array(), true);
 			wp_enqueue_style('home-page', get_stylesheet_directory_uri().'/css/home.css', array(), true);
 		} else {
 			wp_enqueue_style('home-page', get_stylesheet_directory_uri().'/css/home_mobile.css', array(), true);
@@ -67,21 +67,19 @@
 
 	<section class="logos">
 		<h2>בין לקוחותינו</h2>
-		<?php if(!wp_is_mobile()): ?>
-			<?php if( have_rows('logo_images') ): ?>
-				<ul class="slides">
-				<?php while( have_rows('logo_images') ): the_row();
+		<?php if( have_rows('logo_images') ): ?>
+			<ul class="slides">
+			<?php while( have_rows('logo_images') ): the_row();
 
-					// vars
-					$image = get_sub_field('image');
-					$alt = get_sub_field('alt');
-					?>
+				// vars
+				$image = get_sub_field('image');
+				$alt = get_sub_field('alt');
+				?>
 
-					<li class="slide">
-						<img src="<?php echo $image; ?>" alt="<?php echo $alt; ?>" />
-					</li>
-				<?php endwhile; ?>
-			<?php endif; ?>
+				<li class="slide">
+					<img src="<?php echo $image; ?>" alt="<?php echo $alt; ?>" />
+				</li>
+			<?php endwhile; ?>
 		<?php endif; ?>
 	</section>
 <?php get_footer(); ?>

@@ -1,1 +1,210 @@
 /*Home page mobile style*/
+
+div.my-class {
+	margin-top: 65px;
+}
+
+section.gallery {
+	position: relative;
+}
+
+section div.slide {
+	display: block;
+	width: 100%;
+	height: calc(100vw * (500 / 1920));
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 100% auto;
+	overflow: hidden;
+	position: relative;
+}
+
+section div.slide div.info {
+	display: none;
+}
+
+/*Home page features*/
+div.features {
+	padding: 1em 0.5em;
+}
+
+ul#feature {
+	display: block;
+	text-align: center;
+}
+
+ul#feature li {
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	width: 50%;
+	margin-bottom: 1em;
+}
+
+ul#feature li a {
+	display: block;
+	position: relative;
+	padding-top: 80px;
+	text-decoration: none;
+	font-weight: 700;
+	color: black;
+	font-size: 1.2rem;
+	outline: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+ul#feature li a:hover:before {
+	border-color: rgb(254, 222, 139);
+}
+
+ul#feature li a:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 80px;
+	height: 80px;
+	background-color: rgb(47, 48, 47);
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 70% auto;
+	border: 5px solid transparent;
+	transition: all 0.3s;
+}
+
+ul#feature li.tris a:before {
+	background-image: url(/wp-content/themes/bardor/images/Asset2.svg);
+}
+
+ul#feature li.shields a:before {
+	background-image: url(/wp-content/themes/bardor/images/Asset3.svg);
+}
+
+ul#feature li.electric a:before {
+	background-image: url(/wp-content/themes/bardor/images/Asset4.svg);
+}
+
+ul#feature li.height a:before {
+	background-image: url(/wp-content/themes/bardor/images/Asset5.svg);
+}
+
+ul#feature li.doors a:before {
+	background-image: url(/wp-content/themes/bardor/images/Asset6.svg);
+}
+
+div.project {
+	padding: 1em 0.5em;
+	text-align: center;
+	position: relative;
+}
+
+ul#project {
+	display: block;
+}
+
+ul#project li {
+	display: inline-block;
+	vertical-align: top;
+	width: 280px;
+	height: 190px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+	margin: 0em 10px;
+	position: relative;
+	margin-bottom: 2em;
+}
+
+ul#project li.private {
+	background-image: url(/wp-content/themes/bardor/images/private.jpg);
+}
+
+ul#project li.business {
+	background-image: url(/wp-content/themes/bardor/images/yeshuv.jpg);
+}
+
+ul#project li.industry {
+	background-image: url(/wp-content/themes/bardor/images/industry.jpg);
+}
+
+ul#project li.gates {
+	background-image: url(/wp-content/themes/bardor/images/gates.jpg);
+}
+
+ul#project li a {
+	text-decoration: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 0.7em;
+	background: rgba(0, 0, 0, 0.75);
+	color: rgb(255, 199, 52);
+	font-weight: 700;
+	font-size: 1.2rem;
+	transition: all 0.3s;
+}
+
+ul#project li a:after {
+	content: "";
+	position: absolute;
+	top: 1.7em;
+	left: 0;
+	width: 1em;
+	height: 1em;
+	background-color: rgb(255, 199, 52);
+	background-image: url(/wp-content/themes/bardor/images/Asset7.svg);
+	background-repeat: no-repeat;
+	background-position: 8px center;
+	background-size: 45% auto;
+	border-radius: 50%;
+	padding: 1em;
+}
+
+ul#project li a:hover {
+	background-color: black;
+}
+
+section.content {
+	padding: 1em 0.5em
+}
+
+section.content p {
+	font-size: 1.2rem;
+}
+
+section.content p strong {
+	font-weight: 700;
+}
+
+section.logos h2 {
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+ul.slides {
+	padding: 2em 0em;
+	text-align: center;
+}
+
+ul.slides li.slide {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0% 2%;
+	margin-bottom: 4%;
+	width: 45%;
+	position: relative;
+}
+
+ul.slides li.slide img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	height: auto;
+}

@@ -143,10 +143,6 @@ nav .menu-main-menu-container ul li.current-menu-item a {
 	color: rgb(255, 199, 52);
 }
 
-nav .menu-main-menu-container ul li ul.sub-menu {
-
-}
-
 nav .menu-main-menu-container ul li:hover > a {
 	color: rgb(255, 199, 52);
 }
