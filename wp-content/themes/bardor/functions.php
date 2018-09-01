@@ -1,7 +1,7 @@
 <?php
 	// Mobile detect class
 	include_once 'includes/Mobile_Detect.php';
-	include_once 'includes/enviourment.php';
+	include_once 'includes/env.php';
 
 	// Add featured image support
 	add_theme_support( 'post-thumbnails' );
