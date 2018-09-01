@@ -1,0 +1,189 @@
+/*Inner page mobile style*/
+div.my-class {
+	margin-top: 65px;
+}
+
+section.gallery {
+	position: relative;
+}
+
+section div.slide {
+	display: block;
+	width: 100%;
+	height: calc(100vw * (500 / 1920));
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 100% auto;
+	overflow: hidden;
+	position: relative;
+}
+
+section div.slide div.info {
+	display: none;
+}
+
+section.content {
+	padding: 1em 0.5em;
+	color: rgb(42, 45, 44);
+}
+
+section.content article {
+	display: block;
+	position: relative;
+	border-bottom: 1px solid rgba(204, 202, 202, 0.5);
+}
+
+section.content article:last-of-type {
+	border-bottom: none;
+}
+
+section.content h2 {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+section.content ul {
+	padding-right: 20px;
+	list-style-type: disc;
+}
+
+section.content ul li {
+	margin: 0.2em 0em;
+	font-size: 1.1rem;
+}
+
+section.content article div.content {
+	display: block;
+	box-sizing: border-box;
+}
+
+section.content h3 {
+	font-size: 1.3rem;
+	position: relative;
+	font-weight: 700;
+	padding: 1em 0em;
+}
+
+section.content h3:before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	background-image: url(/wp-content/themes/bardor/images/arrow_yellow.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+	width: 0.8em;
+	height: 0.8em;
+	z-index: 100000;
+	margin-left: 0.4em;
+}
+
+section.content p {
+	margin: 0.2em 0em;
+    font-size: 1.2rem;
+}
+
+section.content strong {
+	font-weight: 700;
+}
+
+section.content article div.image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+	width: 300px;
+}
+
+section.content article div.image div.wrapper {
+	display: block;
+	position: relative;
+	margin: 1em 0em;
+}
+
+section.content article div.image div.wrapper img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+section.content article div.image div.wrapper span {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 0.5em;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	font-weight: 600;
+	font-size: 1.2rem;
+}
+
+section.solution_links,
+section.product_images {
+	padding: 1em 0.5em;
+	text-align: center;
+}
+
+section.solution_links a,
+section.product_images div {
+	display: inline-block;
+	vertical-align: top;
+	margin: 2%;
+	box-sizing: border-box;
+	width: 45%;
+	position: relative;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+	transition: all 0.3s;
+}
+
+section.solution_links a,
+section.product_images div {
+	width: 300px;
+	margin: 0;
+	margin-bottom: 1em;
+}
+
+section.solution_links a {
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+	margin-bottom: 2em;
+}
+
+section.solution_links a:after {
+	content: "";
+	position: absolute;
+	bottom: -0.8em;
+	left: 0;
+	width: 1em;
+	height: 1em;
+	background-color: rgb(255, 199, 52);
+	background-image: url(/wp-content/themes/bardor/images/Asset7.svg);
+	background-repeat: no-repeat;
+	background-position: 8px center;
+	background-size: 45% auto;
+	border-radius: 50%;
+	padding: 1.1em;
+}
+
+section.solution_links a img,
+section.product_images div img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+section.solution_links a span,
+section.product_images div span {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 0.5em;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	font-weight: 600;
+	font-size: 1.2rem;
+	transition: all 0.3s;
+}

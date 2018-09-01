@@ -129,10 +129,14 @@ nav .menu-main-menu-container {
 nav .menu-main-menu-container ul li {
 	border-bottom: 1px solid rgba(255, 199, 52, 0.3);
 }
+nav .menu-main-menu-container ul li.menu-item-has-children a {
+	display: none;
+}
 
 nav .menu-main-menu-container ul li.current-menu-parent > a {
 	color: rgb(255, 199, 52);
 }
+
 
 nav .menu-main-menu-container ul li a {
 	display: block;

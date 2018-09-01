@@ -14,7 +14,6 @@
 		} else {
 			wp_enqueue_style('home-page', get_stylesheet_directory_uri().'/css/home_mobile.css', array(), true);
 		}
-
 	}
 	add_action( 'wp_enqueue_scripts', 'home_page_scripts' );
 ?>
