@@ -1,6 +1,7 @@
 <?php
 	// Mobile detect class
 	include_once 'includes/Mobile_Detect.php';
+	include_once 'includes/enviourment.php';
 
 	// Add featured image support
 	add_theme_support( 'post-thumbnails' );
@@ -24,7 +25,7 @@
 
 	function send_to_mailchimp() {
 		// Put your MailChimp API and List ID hehe
-		$api_key = '1f6f150149f7679fff9e564c9d76aeb9-us12';
+		$api_key = MAILCHIMP_API;
 		$list_id = 'f780ed0eff';
 
 		// Let's start by including the MailChimp API wrapper
