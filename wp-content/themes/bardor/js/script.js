@@ -59,4 +59,14 @@ jQuery(window).ready(function() {
 			socialWidget.removeClass('show');
 		}
 	});
+
+	jQuery('header a.menu').on('click', function(event) {
+		event.preventDefault();
+		jQuery(this).toggleClass('open');
+		jQuery('nav').toggleClass('open');
+	});
+
+	jQuery('li.menu-item-has-children').on('click', function() {
+		jQuery('nav').toggleClass('open');
+	});
 });
