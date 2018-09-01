@@ -1,4 +1,7 @@
 <?php
+	// Mobile detect class
+	include_once 'includes/Mobile_Detect.php';
+
 	// Add featured image support
 	add_theme_support( 'post-thumbnails' );
 
@@ -45,5 +48,15 @@
 			echo $MailChimp->getLastError();
 		}
 		die();
+	}
+
+	// Function for detecting mobile version
+	function is_mobile() {
+		$detect = new Mobile_Detect;
+
+		// Exclude tablets.
+		if( $detect->isMobile() && !$detect->isTablet() ){
+		 	return true;
+		}
 	}
 ?>

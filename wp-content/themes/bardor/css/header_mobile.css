@@ -1,0 +1,179 @@
+header {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000000;
+	text-align: center;
+	padding: 1em 0em;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid rgb(255, 199, 52);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	background-color: white;
+}
+
+header a.logo {
+	display: inline-block;
+	vertical-align: middle;
+	width: 250px;
+}
+
+header a.logo img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+header a.phone {
+	position: absolute;
+	top: 0.5em;
+	left: 0.5em;
+	background-image: url(/wp-content/themes/bardor/images/phone.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+	width: 2.5em;
+	height: 2.5em;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+header a.menu {
+	position: absolute;
+	display: inline-block;
+	top: 50%;
+	right: 0em;
+	padding: 1.8em;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	outline: 0;
+}
+
+header a.menu span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 25px;
+	height: 3px;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	background-color: rgb(42, 45, 44);
+	transition: all 0.3s;
+}
+
+header a.menu.open span {
+	background-color: transparent;
+}
+
+header a.menu span:before {
+	content: "";
+	position: absolute;
+	top: -0.5em;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background-color: rgb(42, 45, 44);
+	transition: all 0.3s;
+}
+
+header a.menu.open span:before {
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	top: 0;
+}
+
+header a.menu span:after {
+	content: "";
+	position: absolute;
+	top: 0.5em;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background-color: rgb(42, 45, 44);
+	transition: all 0.3s;
+}
+
+header a.menu.open span:after {
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	top: 0;
+}
+
+nav {
+	display: block;
+	text-align: center;
+	position: absolute;
+	right: -150%;
+	top: 65px;
+	z-index: 10000;
+	width: 100%;
+	text-align: right;
+}
+
+nav .menu-main-menu-container {
+	background-color: rgb(47, 48, 47);
+	padding-bottom: 150px;
+	overflow-y: scroll;
+}
+
+nav .menu-main-menu-container ul li {
+	border-bottom: 1px solid rgba(255, 199, 52, 0.3);
+}
+
+nav .menu-main-menu-container ul li.current-menu-parent > a {
+	color: rgb(255, 199, 52);
+}
+
+nav .menu-main-menu-container ul li a {
+	display: block;
+	padding: 0.8rem 1em;
+	text-decoration: none;
+	color: white;
+	font-size: 1.1rem;
+	font-family: 'Open Sans', sans-serif;
+	border-bottom: 1px solid rgba(255, 199, 52, 0.3);
+}
+
+nav .menu-main-menu-container ul li.current-menu-item a {
+	font-weight: 700;
+	color: rgb(255, 199, 52);
+}
+
+nav .menu-main-menu-container ul li ul.sub-menu {
+
+}
+
+nav .menu-main-menu-container ul li:hover > a {
+	color: rgb(255, 199, 52);
+}
+
+nav .menu-main-menu-container ul li:hover ul.sub-menu {
+	visibility: visible;
+	opacity: 1;
+	max-height: 600px;
+	-webkit-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+	transition: all 0.3s;
+}
+
+nav .menu-main-menu-container ul li ul.sub-menu li {
+	display: block;
+	width: 100%;
+	text-align: right;
+}
+
+nav .menu-main-menu-container ul li ul.sub-menu li a {
+	display: block;
+	padding: 0.8em 1em;
+	font-size: 1.1em;
+	transition: all 0.3s;
+	border: none;
+}
+
+nav .menu-main-menu-container ul li ul.sub-menu li:hover a {
+	color: rgb(255, 199, 52);
+}

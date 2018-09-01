@@ -4,6 +4,11 @@
  *
  * Displays all of the head element and everything up until the "site-content" div.
  */
+	if(!is_mobile()) {
+		wp_enqueue_style('header', get_stylesheet_directory_uri().'/css/header.css', array(), true);
+	} else {
+		wp_enqueue_style('header', get_stylesheet_directory_uri().'/css/header_mobile.css', array(), true);
+	}
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
@@ -19,12 +24,15 @@
 
 		<header>
 			<!-- Display Header Menu -->
-			<?php if(!wp_is_mobile()): ?>
-				<a class="logo" href="<?php bloginfo('home'); ?>">
-					<img src="<?php echo get_stylesheet_directory_uri().'/images/logo.png'; ?>" alt="<?php bloginfo('name'); ?>"/>
-				</a>
+			<?php if(!is_mobile()) { ?>
 				<a class="phone" href="tel:054-4439076">054-4439076</a>
-			<?php endif; ?>
+			<?php } else { ?>
+				<a class="phone" href="tel:054-4439076"></a>
+			<?php } ?>
+			<a class="logo" href="<?php bloginfo('home'); ?>">
+				<img src="<?php echo get_stylesheet_directory_uri().'/images/logo.png'; ?>" alt="<?php bloginfo('name'); ?>"/>
+			</a>
+			<a href="javascript:void(0)" class="menu"><span></span></a>
 		</header><!-- .site-header -->
 		<nav>
 			<!-- Main Menu -->
