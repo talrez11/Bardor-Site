@@ -19,7 +19,7 @@
 				<a href="tel:0544439076">טלפון:0544439076 </a>
 			</li>
 			<li>
-				<a href="mailto:bardor@orange.net.co.il">דוא"ל:bardor@orange.net.co.il</a>
+				<a href="mailto:office@bardor.co.il">דוא"ל:office@bardor.co.il</a>
 			</li>
 		</ul>
 	</footer><!-- .site-footer -->
