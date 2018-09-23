@@ -158,3 +158,61 @@ nav .menu-main-navigation-container ul li a {
 	border-left: 1px solid rgb(254, 222, 139);
 	font-family: 'Open Sans', sans-serif;
 }
+
+/*Landscape*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1367px) and (orientation: landscape){
+	header {
+		padding: 1em calc((100% - 950px)/ 2);
+	}
+
+	nav .menu-main-menu-container {
+		padding: 0.5em calc((100% - 1000px)/ 2);
+	}
+
+	header a.phone {
+		left: calc(50% - 500px);
+	}
+
+	section div.slide div.info.right {
+		right: calc(50% - 400px);
+	}
+
+	section div.slide div.info.left {
+		left: calc(50% - 400px);
+	}
+}
+
+/* Portrait */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+	header a.logo {
+		width: 240px;
+	}
+
+	header a.phone {
+		left: 0;
+		font-size: 1.5rem;
+	}
+
+	nav .menu-main-menu-container ul li ul.sub-menu li a,
+	nav .menu-main-menu-container ul li a {
+		font-size: 1rem;
+	}
+
+	section div.slide div.info.right {
+		right: calc(50% - 350px);
+	}
+
+	section div.slide div.info.left {
+		left: calc(50% - 350px);
+	}
+
+	section div.slide div.info p {
+		font-size: 1rem;
+	}
+
+	section div.slide div.info.right,
+	section div.slide div.info.center,
+	section div.slide div.info.left {
+		width: 330px;
+	}
+}

@@ -522,3 +522,23 @@ footer ul li a {
 		transform: rotate(360deg);
 	}
 }
+
+/*Landscape*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1367px) and (orientation: landscape){
+	div.social {
+		padding: 0.5em;
+		top: 0;
+		visibility: hidden;
+		opacity: 0;
+	}
+}
+
+/* Portrait */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+	div.social {
+		padding: 0.5em;
+		top: 0;
+		visibility: hidden;
+		opacity: 0;
+	}
+}
