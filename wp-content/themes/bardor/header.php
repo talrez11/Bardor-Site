@@ -5,9 +5,9 @@
  * Displays all of the head element and everything up until the "site-content" div.
  */
 	if(!is_mobile()) {
-		wp_enqueue_style('header', get_stylesheet_directory_uri().'/css/header.css', array(), true);
+		wp_enqueue_style('header', get_stylesheet_directory_uri().'/css/header.css?vn='.THEME_VERSION, array(), true);
 	} else {
-		wp_enqueue_style('header', get_stylesheet_directory_uri().'/css/header_mobile.css', array(), true);
+		wp_enqueue_style('header', get_stylesheet_directory_uri().'/css/header_mobile.css?vn='.THEME_VERSION, array(), true);
 	}
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
