@@ -23,18 +23,20 @@ jQuery(window).ready(function() {
 	var socialTriggerPostion = jQuery('#gallery').position().top + 300;
 	var socialWidget = jQuery('div.social');
 
-	jQuery('.gallery').bxSlider({
-		mode: 'fade',
-		speed: 1000,
-		pause: 5000,
-		pager: false,
-		controls: false,
-		auto: true,
-		touchEnabled: true,
-		swipeThreshold: 50,
-		wrapperClass: 'my-class',
-		preloadImages: 'visible'
-	});
+	if(!isMobile.any()) {
+		jQuery('.gallery').bxSlider({
+			mode: 'fade',
+			speed: 1000,
+			pause: 5000,
+			pager: false,
+			controls: false,
+			auto: true,
+			touchEnabled: true,
+			swipeThreshold: 50,
+			wrapperClass: 'my-class',
+			preloadImages: 'visible'
+		});
+	}
 
 	// Logos Slider
 	jQuery('ul.slides').slick({

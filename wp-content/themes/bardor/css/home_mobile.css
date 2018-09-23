@@ -6,15 +6,16 @@ div.my-class {
 
 section.gallery {
 	position: relative;
+	margin-top: 60px;
 }
 
 section div.slide {
 	display: block;
 	width: 100%;
-	height: calc(100vw * (500 / 1920));
+	height: 200px;
 	background-repeat: no-repeat;
 	background-position: center top;
-	background-size: 100% auto;
+	background-size: cover;
 	overflow: hidden;
 	position: relative;
 }
@@ -205,6 +206,6 @@ ul.slides li.slide img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 90%;
+	width: 55%;
 	height: auto;
 }

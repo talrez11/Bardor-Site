@@ -25,19 +25,33 @@
 	<?php } ?>
 
 	<section id="gallery" class="gallery">
-		<?php if( have_rows('slider_images') ): ?>
-			<?php while( have_rows('slider_images') ): the_row(); // vars
-				$image = get_sub_field('image');
-				$description = get_sub_field('description');
-				$class = get_sub_field('description_position');
-			?>
-				<div class="slide" style="background-image: url('<?php echo $image; ?>');">
-					<div class="<?php echo $class.' info' ?>">
-						<p><?php echo $description; ?></p>
+		<?php if(!is_mobile()) { ?>
+			<?php if( have_rows('slider_images') ): ?>
+				<?php while( have_rows('slider_images') ): the_row(); // vars
+					$image = get_sub_field('image');
+					$description = get_sub_field('description');
+					$class = get_sub_field('description_position');
+				?>
+					<div class="slide" style="background-image: url('<?php echo $image; ?>');">
+						<div class="<?php echo $class.' info' ?>">
+							<p><?php echo $description; ?></p>
+						</div>
 					</div>
-				</div>
-			<?php endwhile; ?>
-		<?php endif; ?>
+				<?php endwhile; ?>
+			<?php endif; ?>
+		<?php } else {?>
+			<?php if( have_rows('slider_images') ): ?>
+				<?php while( have_rows('slider_images') ): the_row(); // vars
+					$image = get_sub_field('image');
+					$description = get_sub_field('description');
+					$class = get_sub_field('description_position');
+				?>
+					<div class="slide" style="background-image: url('<?php echo $image; ?>');">
+					</div>
+					<?php break; ?>
+				<?php endwhile; ?>
+			<?php endif; ?>
+		<?php } ?>
 	</section>
 
 	<section class="content">
