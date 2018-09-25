@@ -95,4 +95,23 @@
 			<?php endwhile; ?>
 		<?php endif; ?>
 	</section>
+
+	<section class="logos">
+		<h2>לקוחות נוספים</h2>
+		<?php if( have_rows('client_logo_images') ): ?>
+			<ul class="slides">
+			<?php while( have_rows('client_logo_images') ): the_row();
+
+				// vars
+				$image = get_sub_field('image');
+				$alt = get_sub_field('alt');
+				?>
+
+				<li class="slide">
+					<img src="<?php echo $image; ?>" alt="<?php echo $alt; ?>" />
+				</li>
+			<?php endwhile; ?>
+		<?php endif; ?>
+	</section>
+
 <?php get_footer(); ?>
