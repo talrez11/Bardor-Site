@@ -371,6 +371,46 @@ div.social ul li a img {
 	height: auto;
 }
 
+/*Share widget*/
+
+div.share {
+	padding: 0em calc((100% - 1200px)/ 2);
+	margin-top: -3em;
+	margin-bottom: 3em;
+}
+
+div.share h3 {
+	font-size: 2rem;
+	padding-bottom: 0.2em;
+}
+
+div.share ul {
+	display: block;
+}
+
+div.share ul li {
+	display: inline-block;
+	vertical-align: middle;
+	width: 4em;
+	height: 4em;
+	position: relative;
+	background-color: black;
+	border-radius: 50%;
+}
+
+div.share ul li a {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+div.share ul li a img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
 
 /*Footer Section*/
 footer {

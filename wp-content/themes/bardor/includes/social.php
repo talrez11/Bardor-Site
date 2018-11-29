@@ -10,7 +10,7 @@
 			</a>
 		</li>
 		<li>
-			<a href="mailto:talreznic11@gmail.com" target="_blank">
+			<a href="mailto:office@bardor.co.il" target="_blank">
 				<img src="<?php echo get_stylesheet_directory_uri().'/images/mail.png'; ?>" alt="mail"/>
 			</a>
 		</li>
