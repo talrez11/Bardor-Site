@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6dcc6517-0406-4e0c-bbce-160f7b8fdf59" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/bardor/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/bardor/css/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/bardor/css/inner.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/bardor/css/inner.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/bardor/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/bardor/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="6dcc6517-0406-4e0c-bbce-160f7b8fdf59" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,15 +205,15 @@
       <option name="presentableId" value="Default" />
       <updated>1542007953462</updated>
       <workItem from="1542007954788" duration="42000" />
-      <workItem from="1543520552978" duration="5086000" />
+      <workItem from="1543520552978" duration="5329000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5128000" />
+    <option name="totallyTimeSpent" value="5371000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="61" y="-4" width="1859" height="1084" extended-state="6" />
+    <frame x="-1859" y="-4" width="1859" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.18808605" />
