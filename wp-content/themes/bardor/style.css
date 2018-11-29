@@ -582,3 +582,17 @@ footer ul li a {
 		opacity: 0;
 	}
 }
+
+@media only screen and (max-width: 768px) {
+	div.share {
+		padding: 0.5em;
+		margin-top: 0em;
+		margin-bottom: 1em;
+	}
+
+	div.share ul li {
+		width: 3em;
+		height: 3em;
+	}
+
+}

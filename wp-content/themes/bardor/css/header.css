@@ -165,8 +165,16 @@ nav .menu-main-navigation-container ul li a {
 		padding: 1em calc((100% - 950px)/ 2);
 	}
 
+	nav .menu-main-menu-container ul li {
+		width: 165px;
+	}
+
 	nav .menu-main-menu-container {
 		padding: 0.5em calc((100% - 1000px)/ 2);
+	}
+
+	nav .menu-main-menu-container ul li a {
+		font-size: 1.2rem;
 	}
 
 	header a.phone {
@@ -191,6 +199,10 @@ nav .menu-main-navigation-container ul li a {
 	header a.phone {
 		left: 0;
 		font-size: 1.5rem;
+	}
+
+	nav .menu-main-menu-container ul li {
+		width: 128px;
 	}
 
 	nav .menu-main-menu-container ul li ul.sub-menu li a,

@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dcc6517-0406-4e0c-bbce-160f7b8fdf59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/bardor/includes/share.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/bardor/project.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/bardor/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/bardor/css/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/bardor/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/bardor/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/bardor/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/bardor/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/bardor/includes/social.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/bardor/includes/social.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/bardor/css/inner.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/bardor/css/inner.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/bardor/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/bardor/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,11 +23,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/bardor/css/header.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="42" />
+            <state relative-caret-position="619">
+              <caret line="168" column="20" selection-start-line="168" selection-start-column="20" selection-end-line="168" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/bardor/css/inner.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="289" column="44" selection-start-line="289" selection-start-column="44" selection-end-line="289" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -57,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/bardor/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3616">
-              <caret line="382" column="20" selection-start-line="382" selection-start-column="20" selection-end-line="382" selection-end-column="20" />
+            <state relative-caret-position="458">
+              <caret line="582" column="5" selection-start-line="582" selection-start-column="5" selection-end-line="582" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -90,7 +95,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/bardor/includes/share.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
@@ -104,6 +109,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>social</find>
+      <find>@</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -114,11 +120,12 @@
       <list>
         <option value="$PROJECT_DIR$/wp-content/themes/bardor/home.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/bardor/includes/social.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/bardor/css/header.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/bardor/header.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/bardor/style.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/bardor/project.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/bardor/includes/share.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/bardor/style.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/bardor/css/inner.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/bardor/css/header.css" />
       </list>
     </option>
   </component>
@@ -202,12 +209,12 @@
       <option name="presentableId" value="Default" />
       <updated>1542007953462</updated>
       <workItem from="1542007954788" duration="42000" />
-      <workItem from="1543520552978" duration="4075000" />
+      <workItem from="1543520552978" duration="5086000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4117000" />
+    <option name="totallyTimeSpent" value="5128000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="61" y="-4" width="1859" height="1084" extended-state="6" />
@@ -294,20 +301,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/bardor/css/header.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/bardor/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3616">
-          <caret line="382" column="20" selection-start-line="382" selection-start-column="20" selection-end-line="382" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/bardor/project.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -319,6 +312,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="9" column="98" selection-start-line="9" selection-start-column="98" selection-end-line="9" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/bardor/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="582" column="5" selection-start-line="582" selection-start-column="5" selection-end-line="582" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/bardor/css/inner.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="289" column="44" selection-start-line="289" selection-start-column="44" selection-end-line="289" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/bardor/css/header.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="168" column="20" selection-start-line="168" selection-start-column="20" selection-end-line="168" selection-end-column="20" />
         </state>
       </provider>
     </entry>

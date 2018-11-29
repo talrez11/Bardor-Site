@@ -286,6 +286,9 @@ section.content {
 
 /*Landscape*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1367px) and (orientation: landscape){
+	div.share {
+		padding: 1em calc((100% - 950px)/ 2);
+	}
 	section.content {
 		padding: 1em calc((100% - 950px)/ 2)
 	}
@@ -311,8 +314,15 @@ section.content {
 
 /* Portrait */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+	div.share {
+		padding: 1em calc((100% - 700px)/ 2)
+	}
 	section.content {
 		padding: 1em calc((100% - 700px)/ 2);
+	}
+
+	section.content article {
+		padding: 0em;
 	}
 
 	section.content p {
