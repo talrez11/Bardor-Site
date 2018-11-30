@@ -1,6 +1,6 @@
 <?php
 /*
-    Template Name: Inner Page
+    Template Name: Project Page
 */
 function inner_page_scripts() {
     wp_enqueue_script('slider', get_stylesheet_directory_uri().'/js/jquery.bxslider.js', array('jquery'), true);
