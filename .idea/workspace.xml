@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dcc6517-0406-4e0c-bbce-160f7b8fdf59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/bardor-site.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/bardor/project.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/bardor/project.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/bardor/css/inner_mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/bardor/css/inner_mobile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/bardor/includes/env2.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/bardor/includes/env2.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +22,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/bardor/includes/env2.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="28">
@@ -39,22 +34,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/bardor/css/inner.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8092">
+            <state relative-caret-position="206">
               <caret line="289" column="44" selection-start-line="289" selection-start-column="44" selection-end-line="289" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/bardor/header.php">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/bardor/css/inner_mobile.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="15" column="92" selection-start-line="15" selection-start-column="92" selection-end-line="15" selection-end-column="92" />
+            <state relative-caret-position="224">
+              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/bardor/project.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="392">
@@ -129,14 +124,15 @@
         <option value="$PROJECT_DIR$/wp-content/themes/bardor/style.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/bardor/css/inner.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/bardor/css/header.css" />
-        <option value="$PROJECT_DIR$/wp-content/themes/bardor/includes/env2.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/bardor/project.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/bardor/css/inner_mobile.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/bardor/includes/env2.php" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="60" />
-    <option name="y" value="1069" />
+    <option name="x" value="-1860" />
+    <option name="y" value="-11" />
     <option name="width" value="1861" />
     <option name="height" value="1092" />
   </component>
@@ -170,6 +166,14 @@
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="bardor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bardor-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bardor-site" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="bardor" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bardor-site" type="b2602c69:ProjectViewProjectNode" />
@@ -215,15 +219,15 @@
       <updated>1542007953462</updated>
       <workItem from="1542007954788" duration="42000" />
       <workItem from="1543520552978" duration="5575000" />
-      <workItem from="1543565979409" duration="1243000" />
+      <workItem from="1543565979409" duration="1902000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6860000" />
+    <option name="totallyTimeSpent" value="7519000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="60" y="1069" width="1861" height="1092" extended-state="6" />
+    <frame x="60" y="-11" width="1861" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18808605" />
@@ -279,13 +283,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/bardor/css/inner.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8092">
-          <caret line="289" column="44" selection-start-line="289" selection-start-column="44" selection-end-line="289" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/bardor/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -335,17 +332,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/bardor/includes/env2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/bardor/project.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
           <caret line="62" column="48" lean-forward="true" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/bardor/css/inner.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="289" column="44" selection-start-line="289" selection-start-column="44" selection-end-line="289" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/bardor/css/inner_mobile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/bardor/includes/env2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
         </state>
       </provider>
     </entry>

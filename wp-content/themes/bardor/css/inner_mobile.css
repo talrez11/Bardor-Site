@@ -3,6 +3,12 @@ div.my-class {
 	margin-top: 60px;
 }
 
+iframe {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
 section.gallery {
 	position: relative;
 }
