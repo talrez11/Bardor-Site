@@ -3,6 +3,10 @@ div.my-class {
 	margin-top: 60px;
 }
 
+span:empty {
+	display: none;
+}
+
 iframe {
 	display: block;
 	width: 100%;
@@ -68,6 +72,10 @@ section.content h3 {
 	position: relative;
 	font-weight: 700;
 	padding: 1em 0em;
+}
+
+section.content h3:empty {
+	display: none;
 }
 
 section.content h3:before {

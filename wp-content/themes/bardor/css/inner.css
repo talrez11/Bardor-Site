@@ -1,5 +1,9 @@
 /*Inner Pages Style*/
 
+span:empty {
+	display: none;
+}
+
 section.top .attachment-full.size-full.wp-post-image {
 	width: 100%;
 	height: auto;
@@ -48,6 +52,10 @@ section.content h3 {
 	font-size: 1.5rem;
 	position: relative;
 	font-weight: 700;
+}
+
+section.content h3:empty {
+	display: none;
 }
 
 section.content h3:before {
